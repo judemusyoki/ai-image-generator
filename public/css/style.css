@@ -115,3 +115,39 @@ img {
   text-align: center;
   margin-top: 1rem;
 }
+
+/* Add a responsive design by using media queries */
+@media only screen and (max-width: 600px) {
+  /* Make the font size smaller on smaller screens */
+  body {
+    font-size: 16px;
+  }
+  /* Adjust the layout of the navbar */
+  .navbar {
+    flex-wrap: wrap;
+  }
+  /* Stack the logo and nav-links on top of each other */
+  .logo, .nav-links {
+    width: 100%;
+  }
+  /* Make the form input and select fields take up the full width of the screen */
+  .form-control {
+    width: 100%;
+  }
+  #prompt, #size {
+   width: 100%; 
+  }
+  /* Center the generate button in the form */
+  .btn {
+    display: block;
+    margin: 0 auto;
+  }
+  /* Adjust the layout of the image container */
+  .image-container {
+    text-align: center;
+  }
+  /* Center the message and image */
+  .msg, #image {
+    margin: 0 auto;
+  }
+}
